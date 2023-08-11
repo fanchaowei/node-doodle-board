@@ -1,0 +1,21 @@
+{
+  "name": "node-doodle-board",
+  "version": "0.0.1",
+  "main": "index.js",
+  "module": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "",
+    "lint": "eslint './**/*.js'",
+    "lint fix": "eslint './**/*.js' --fix",
+    "lint:init": "eslint --init",
+    "compile": "",
+    "build": "",
+    "deploy": "",
+    "test": "",
+    "prepublishOnly": ""
+  },
+  "devDependencies": {
+    "eslint": "^8.46.0"
+  }
+}
