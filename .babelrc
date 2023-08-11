@@ -1,0 +1,20 @@
+// @babel/env 表示预设支持当前版本所能支持的所有 js 的正式标准
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        // targets 表示支持的浏览器版本，当前的配置意思是市场占有率高于 0.25% 且任然在维护的浏览器
+        // "targets": "> 0.25%, not dead",
+        "targets": {
+          "chrome": 59
+        },
+        // useBuiltIns 表示是否使用内置的 polyfill，如果为 usage 则表示按需引入，corejs 表示使用的 polyfill 版本
+        // polyfill 是一个库，它包含了 ES6+ 的所有特性的垫片，可以模拟出所有特性在当前环境下的实现
+        // 我们的 useBuiltIns 配置为 usage，表示 Babel 会根据我们的实际用到的 api 以及编译目标的浏览器兼容性，从 core-js 中按需添加需要的 polyfill
+        "useBuiltIns": "usage",
+        "corejs": 3
+      }
+    ]
+  ]
+}

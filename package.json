@@ -5,17 +5,24 @@
   "module": "src/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "",
+    "start": "http-server -c-1 -p9090",
     "lint": "eslint './**/*.js'",
     "lint fix": "eslint './**/*.js' --fix",
     "lint:init": "eslint --init",
-    "compile": "",
+    "compile": "babel src -d lib",
     "build": "",
     "deploy": "",
     "test": "",
     "prepublishOnly": ""
   },
   "devDependencies": {
-    "eslint": "^8.46.0"
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "eslint": "^8.46.0",
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "core-js": "3"
   }
 }
